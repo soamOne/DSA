@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin>>T;
+    while(T--){
+        int N;cin>>N;
+        int s=0,dig;
+        while(N!=0){
+            dig=N%10;
+            N=N/10;
+            s=(s*10)+dig;
+        }
+        cout<<s<<"\n";
+    }
+	
+	return 0;
+}
