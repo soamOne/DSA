@@ -1,1 +1,1 @@
-# CodeChef-DSA-learning-Series
+My solutions to the CodeChef DSA learning Series.
