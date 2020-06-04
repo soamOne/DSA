@@ -1,1 +1,1 @@
-My solutions to the CodeChef DSA learning Series.
+Materials and problems for DSA.
