@@ -10,7 +10,6 @@ public:
         reverse(binN.begin(),binN.end());
         int res=0;int j=0;
         for(int i=binN.size()-1;i>=0;i--){
-            //cout<<binN[i];
             if (binN[i]==0) res+=pow(2,j)*1;
             j++;
         }return res;
