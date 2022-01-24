@@ -15,9 +15,9 @@ public:
         if(!root) return 0;
         int ans=0;
         if(root->val>=low && root->val<=high) ans+=root->val;
-        if(root->val>low) ans+=rangeSumBST(root->left,low,high);
-        if(root->val<high) ans+=rangeSumBST(root->right,low,high);
-        
+        if(root->val<low) ans+=rangeSumBST(root->right,low,high);
+        else if(root->val>high) ans+=rangeSumBST(root->left,low,high);
+        else ans+=rangeSumBST(root->left, low, high)+rangeSumBST(root->right, low, high);
         return ans;
     }
 };
