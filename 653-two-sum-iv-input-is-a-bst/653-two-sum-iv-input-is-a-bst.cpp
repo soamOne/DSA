@@ -28,11 +28,11 @@ public:
         
     }
     
-    vector<int> inorderTraversal(TreeNode* root) {
-        if(!root) return nums;
+    void inorderTraversal(TreeNode* root) {
+        if(!root) return;
         inorderTraversal(root->left);
         nums.push_back(root->val);
         inorderTraversal(root->right);
-        return nums;
+        
     }
 };
